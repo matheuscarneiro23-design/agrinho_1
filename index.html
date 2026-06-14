@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo | Tecnologia Sustentável e Sucessão Familiar no Campo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Acessibilidade & Barra Superior -->
+    <div class="accessibility-bar" role="complementary" aria-label="Controles de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+            <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+            <button id="btn-contrast" aria-label="Alternar alto contraste">Alternar Contraste</button>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="AgroFuturo Home">Agro<span>Futuro</span></a>
+            <nav class="nav-menu" aria-label="Navegação Principal">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#depoimentos">Casos de Sucesso</a>
+                <a href="#faq">Dúvidas</a>
+            </nav>
+            <a href="#cta-form" class="btn btn-primary nav-cta">Garantir o Futuro da Minha Fazenda</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Inovação e Tradição</span>
+                    <h1>O elo entre as gerações que vai transformar a sua fazenda</h1>
+                    <p>Traga o jovem de volta ao campo com tecnologia sustentável. Garanta uma sucessão familiar moderna, altamente produtiva e em perfeito equilíbrio com a natureza.</p>
+                    <div class="hero-actions">
+                        <a href="#cta-form" class="btn btn-primary">Quero Modernizar Minha Propriedade</a>
+                        <a href="#beneficios" class="btn btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-stat">+42%</div>
+                        <p>De eficiência produtiva com manejo tecnológico e sustentável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios Section -->
+        <section id="beneficios" class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que a tecnologia sustentável é o segredo da sucessão familiar?</h2>
+                    <p>A nova geração busca propósito e inovação. Mostre que o futuro do agro combina rentabilidade máxima e preservação ambiental.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">📊</div>
+                        <h3>Gestão Baseada em Dados</h3>
+                        <p>Substitua o trabalho braçal exaustivo por decisões estratégicas apoiadas por sensores e inteligência artificial.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">🌱</div>
+                        <h3>Sustentabilidade Lucrativa</h3>
+                        <p>Práticas regenerativas que reduzem o custo de insumos, valorizam a terra e abrem portas para mercados premium internacionais.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">🤝</div>
+                        <h3>Sucessão Sem Conflitos</h3>
+                        <p>Crie uma transição suave onde a sabedoria dos pais se une ao domínio tecnológico e visão de futuro dos filhos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos / Carrossel Section -->
+        <section id="depoimentos" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Histórias Reais de Sucesso</h2>
+                    <p>Veja como famílias rurais uniram gerações e escalaram seus resultados através da inovação consciente.</p>
+                </div>
+                
+                <div class="carousel-container" aria-roledescription="carrossel">
+                    <div id="carousel-track" class="carousel-track">
+                        <!-- Renderizado via JS -->
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="carousel-prev" class="carousel-btn" aria-label="Depoimento anterior">❮</button>
+                        <button id="carousel-next" class="carousel-btn" aria-label="Próximo depoimento">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Form Section -->
+        <section id="cta-form" class="cta-section">
+            <div class="container cta-container">
+                <div class="cta-text">
+                    <h2>Prepare sua fazenda para os próximos 50 anos</h2>
+                    <p>Fale com um de nossos consultores especialistas em governança e tecnologia agrícola sustentável. Receba um diagnóstico inicial gratuito para a sua propriedade rural.</p>
+                    <div class="scarcity-note">
+                        <p>⚠️ <strong>Atenção:</strong> Vagas limitadas para diagnósticos gratuitos este mês devido à agenda técnica regional.</p>
+                    </div>
+                </div>
+                <div class="cta-form-container">
+                    <form id="landing-form" class="conversion-form">
+                        <div class="form-group">
+                            <label for="form-name">Nome Completo</label>
+                            <input type="text" id="form-name" required placeholder="Ex: Matheus Lima">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">E-mail Profissional</label>
+                            <input type="email" id="form-email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">WhatsApp/Telefone</label>
+                            <input type="tel" id="form-phone" required placeholder="(00) 00000-0000">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agendar Meu Diagnóstico Gratuito</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ / Acordeão Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Perguntas Frequentes</h2>
+                    <p>Esclareça suas principais dúvidas sobre tecnologia, investimento e o processo de sucessão estruturada.</p>
+                </div>
+                <div id="faq-accordion" class="accordion-container">
+                    <!-- Renderizado via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 AgroFuturo Soluções Agrícolas Ltda. Todos os direitos reservados.</p>
+            <p>Desenvolvido com foco em sustentabilidade e longevidade no campo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
